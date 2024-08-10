@@ -10,3 +10,9 @@
     padding: 0;
     margin: 0;
 }
+
+@layer components {
+    .tab-active {
+        font-weight: bold;
+    }
+}
