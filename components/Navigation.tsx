@@ -14,11 +14,11 @@ const tabs: Tab[] = [
     {name: "About", path: "/about"},
 ]
 
-function Navigation() {
+function Navigation({className}: { className?: string }) {
     const pathname = usePathname();
 
     return (
-        <div role="tablist" className="tabs justify-start">
+        <div role="tablist" className={`tabs justify-start ${className}`}>
             {tabs.map(({name, path}) => {
                 const isActive = path === "/" ? pathname === path : pathname.startsWith(path);
                 const tabClassName = `tab ${isActive ? "tab-active" : ""}`;

@@ -1,10 +1,8 @@
-import ThemeSwitch from "@/components/ThemeSwitch";
-
 function Home() {
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between p-24">
+        <main className="flex min-h-screen flex-col">
             <button className="btn btn-primary">button</button>
-            <ThemeSwitch/>
+            <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
         </main>
     );
 }
