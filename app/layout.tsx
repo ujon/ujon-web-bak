@@ -1,7 +1,7 @@
 import type {Metadata} from "next";
 import "./globals.css";
 import {ReactNode} from "react";
-import Navigation from "@/components/Navigation";
+import Header from "@/components/Header";
 
 
 export const metadata: Metadata = {
@@ -11,11 +11,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}: Readonly<{ children: ReactNode }>) {
     return (
-        <html lang="en" data-theme="light">
+        <html lang="en">
         <body>
-        <div>
-            <Navigation/>
-        </div>
+        <Header/>
         {children}
         </body>
         </html>
