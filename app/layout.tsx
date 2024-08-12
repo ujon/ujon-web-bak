@@ -14,7 +14,7 @@ export default function RootLayout({children}: Readonly<{ children: ReactNode }>
         <html lang="en">
         <body>
         <Header/>
-        <main className="flex flex-col mx-auto max-w-screen-xl">
+        <main className="flex flex-col mx-auto px-5 py-3 max-w-screen-xl">
             {children}
         </main>
         </body>
