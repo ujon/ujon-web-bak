@@ -21,7 +21,7 @@ function Navigation({className}: { className?: string }) {
         <div role="tablist" className={`tabs justify-start ${className}`}>
             {tabs.map(({name, path}) => {
                 const isActive = path === "/" ? pathname === path : pathname.startsWith(path);
-                const tabClassName = `tab ${isActive ? "tab-active" : ""}`;
+                const tabClassName = `tab ${isActive ? "tab-active" : ""} hover:text-primary`;
 
                 return (
                     <Link
