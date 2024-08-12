@@ -23,15 +23,15 @@ const config: Config = {
             {
                 light: {
                     ...require("daisyui/src/theming/themes")["light"],
-                    primary: "#facc15",
-                    secondary: "#f5f5f4",
-                    background: "#ffffff"
+                    primary: "hsla(48, 92%, 55%, 1)", // --palette-yellow
+                    secondary: "hsla(0, 0%, 100%, 1)", // --palette-white
+                    background: "hsla(0, 0%, 100%, 1)", // --palette-white
                 },
                 dark: {
                     ...require("daisyui/src/theming/themes")["dark"],
-                    primary: "#facc15",
-                    secondary: "#f5f5f4",
-                    background: "#000000"
+                    primary: "hsla(48, 92%, 55%, 1)", // --palette-yellow
+                    secondary: "hsla(0, 0%, 100%, 1)", // --palette-white
+                    background: "hsla(0, 0%, 0%, 1)", // --palette-black
                 },
             },
         ],

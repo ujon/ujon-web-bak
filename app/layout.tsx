@@ -1,6 +1,6 @@
 import type {Metadata} from "next";
-import "./globals.css";
 import {ReactNode} from "react";
+import "@/styles/index.css"
 import Header from "@/components/Header";
 
 
@@ -14,7 +14,9 @@ export default function RootLayout({children}: Readonly<{ children: ReactNode }>
         <html lang="en">
         <body>
         <Header/>
-        {children}
+        <main className="flex flex-col mx-auto max-w-screen-xl">
+            {children}
+        </main>
         </body>
         </html>
     );

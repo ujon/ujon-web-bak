@@ -1,0 +1,19 @@
+:root {
+    /* palette */
+    --palette-black: hsla(0, 0%, 0%, 1);
+    --palette-white: hsla(0, 0%, 100%, 1);
+    --palette-yellow: hsla(48, 92%, 55%, 1); /* Base color */
+
+    /* system color */
+    --logo-color: var(--palette-black);
+}
+
+[data-theme='light'] {
+    /* system color */
+    --logo-color: var(--palette-black);
+}
+
+[data-theme='dark'] {
+    /* system color */
+    --logo-color: var(--palette-white);
+}
