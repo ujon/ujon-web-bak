@@ -6,6 +6,10 @@
 
     /* system color */
     --logo-color: var(--palette-black);
+
+    /* system size */
+    --content-padding-bottom: 20rem;
+    --header-height: 4rem;
 }
 
 [data-theme='light'] {

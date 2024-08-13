@@ -15,16 +15,14 @@ function Blog() {
     ]
 
     return (
-        <div>
-            <div className="mb-40">
-                {dummies.map(({title, tags}, index) => (
-                    <Fragment key={index}>
-                        <PostCompact title={title} tags={tags}/>
-                        {index < dummies.length - 1 && <div className="divider "/>}
-                    </Fragment>
-                ))}
-            </div>
-        </div>
+        <Fragment>
+            {dummies.map(({title, tags}, index) => (
+                <Fragment key={index}>
+                    <PostCompact title={title} tags={tags}/>
+                    {index < dummies.length - 1 && <div className="divider "/>}
+                </Fragment>
+            ))}
+        </Fragment>
     )
 }
 

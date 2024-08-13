@@ -1,0 +1,11 @@
+.content-pb {
+    padding-bottom: var(--content-padding-bottom);
+}
+
+.content-h {
+    height: calc(100vh - var(--header-height));
+}
+
+.header-h {
+    height: var(--header-height);
+}
