@@ -18,7 +18,7 @@ function ThemeSwitch() {
     }, [theme]);
 
     return (
-        <label className="swap swap-rotate">
+        <label className="btn btn-ghost swap swap-rotate hover:text-primary">
             <input type="checkbox" className="theme-controller" onClick={toggleTheme}/>
 
             {/* sun constants */}
