@@ -1,4 +1,5 @@
 FROM node:20-alpine AS base
+LABEL org.opencontainers.image.source=https://github.com/ujon/ujon-web
 
 FROM base AS builder
 WORKDIR /app
@@ -23,7 +24,7 @@ COPY --from=builder --chown=nextjs:nodejs /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
-ENV HOSTNAME=0.0.0.0
-EXPOSE 3000
+#ENV HOSTNAME=0.0.0.0
+#EXPOSE 3000
 ENTRYPOINT ["node","server.js"]
 
