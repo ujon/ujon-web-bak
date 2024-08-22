@@ -12,10 +12,10 @@ interface ContactBarProps {
 function ContactBar({size = '2rem'}: ContactBarProps): ReactElement {
     return (
         <div className="flex items-center gap-1">
-            <Link href={contacts.linkedin}>
+            <Link href={contacts.linkedin} target="_blank">
                 <Linkedin size={size} color={"var(--icon-color)"} className="hover:linkedin"/>
             </Link>
-            <Link href={contacts.github}>
+            <Link href={contacts.github} target="_blank">
                 <Github size={size} color={"var(--icon-color)"} className="hover:github"/>
             </Link>
             <Link href={`mailto:${contacts.email}`}>
