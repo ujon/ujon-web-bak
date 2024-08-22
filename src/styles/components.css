@@ -9,3 +9,19 @@
 .header-h {
     height: var(--header-height);
 }
+
+/* Icon */
+.hover\:linkedin:hover {
+    fill: var(--linkedin-color);
+    background-color: var(--linkedin-bg-color);
+}
+
+.hover\:github:hover {
+    fill: var(--github-color);
+    background-color: var(--github-bg-color);
+}
+
+.hover\:email:hover {
+    fill: var(--email-color);
+    background-color: var(--email-bg-color);
+}

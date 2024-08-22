@@ -3,9 +3,18 @@
     --palette-black: hsla(0, 0%, 0%, 1);
     --palette-white: hsla(0, 0%, 100%, 1);
     --palette-yellow: hsla(48, 92%, 55%, 1); /* Base color */
+    --palette-purple: hsla(269, 100%, 21%, 1);
+    --palette-blue: hsla(200.6, 100%, 35.5%, 1);
 
     /* system color */
-    --logo-color: var(--palette-black);
+    --icon-color: var(--palette-black);
+
+    --github-color: var(--palette-purple);
+    --github-bg-color: var(--palette-white);
+    --linkedin-color: var(--palette-blue);
+    --linkedin-bg-color: var(--palette-white);
+    --email-color: var(--palette-yellow);
+    --email-bg-color: var(--palette-white);
 
     /* system size */
     --content-padding-bottom: 20rem;
@@ -14,10 +23,10 @@
 
 [data-theme='light'] {
     /* system color */
-    --logo-color: var(--palette-black);
+    --icon-color: var(--palette-black);
 }
 
 [data-theme='dark'] {
     /* system color */
-    --logo-color: var(--palette-white);
+    --icon-color: var(--palette-white);
 }

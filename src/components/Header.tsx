@@ -18,7 +18,7 @@ async function Header() {
         >
             <nav className="flex flex-row items-center px-5 py-3 max-w-screen-xl mx-auto w-full">
                 <Link href="#">
-                    <Logo size="2rem" color="var(--logo-color)"/>
+                    <Logo size="2rem" color="var(--icon-color)"/>
                 </Link>
                 <Navigation className="flex-1"/>
                 <ThemeSwitch/>

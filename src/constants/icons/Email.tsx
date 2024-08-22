@@ -1,6 +1,6 @@
 import type {Icon} from "ujon-constants";
 
-function Email({size = '24', color = 'black'}: Icon) {
+function Email({size = '24', color = 'black', className}: Icon) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -8,6 +8,7 @@ function Email({size = '24', color = 'black'}: Icon) {
             height={size}
             viewBox="0 0 24 24"
             fill={color}
+            className={className}
         >
             <path d="M12 13.183L19 8.75934V17H5V8.75934L12 13.183Z"/>
             <path d="M5.95982 7H18.0402L12 10.817L5.95982 7Z"/>

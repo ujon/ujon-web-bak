@@ -1,4 +1,5 @@
 import LayoutCenter from "@/components/LayoutCenter";
+import ContactBar from "@/components/ContactBar";
 
 function Home() {
     // todo: text1 and text2 should be modified.
@@ -11,6 +12,7 @@ function Home() {
                     <div className="max-w-screen-md">
                         <h1 className="text-5xl font-bold">{text1}</h1>
                         <p className="py-6">{text2}</p>
+                        <ContactBar/>
                     </div>
                 </div>
             </div>
